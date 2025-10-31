@@ -6,7 +6,7 @@ Demo Video
 
 # How it Works
 
-- The server registers the ChatServer object for RPC.
+- The server registers the ChatRoomServer object for RPC.
 
 - Each client connects using rpc.Dial.
 
