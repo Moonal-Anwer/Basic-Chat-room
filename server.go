@@ -40,7 +40,7 @@ func main() {
 	chatServer := new(ChatroomServer)
 	rpc.Register(chatServer)
 
-	listener, err := net.Listen("tcp", "127.0.0.1:1234")
+	listener, err := net.Listen("tcp", "0.0.0.0:1234")
 	if err != nil {
 		fmt.Println("something went wrong: ", err)
 		return

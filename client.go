@@ -14,7 +14,7 @@ type Message struct {
 }
 
 func main() {
-	client, err := rpc.Dial("tcp", "127.0.0.1:1234")
+	client, err := rpc.Dial("tcp", "0.0.0.0:1234")
 	defer client.Close()
 	read := bufio.NewReader(os.Stdin)
 	fmt.Print("Please enter your name : ")
