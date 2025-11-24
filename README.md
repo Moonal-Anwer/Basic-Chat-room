@@ -16,16 +16,19 @@ Demo Video
 
 # project structure 
 
+```text
 Basic-Chat-room/
 │
 ├── client/
-│ └── main.go
+│     └── main.go
+│
 ├── server/
-│ └── main.go
+│     └── main.go
+│
 ├── Dockerfile
 ├── go.mod
 └── README.md
-
+```
 
 
 ## How to Run
