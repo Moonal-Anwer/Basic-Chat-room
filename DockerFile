@@ -1,13 +1,16 @@
 FROM golang:1.25.3 AS builder
 
-RUN mkdir /app
-
-ADD . /app
-
 WORKDIR /app
 
-RUN go build -o main .
+COPY go.mod .
+
+COPY server/ ./server/
+
+
+WORKDIR /app/server
+
+RUN go build -o server .
 
 EXPOSE 1234
 
-CMD ["/app/main"]
+CMD ["/app/server/server"]
