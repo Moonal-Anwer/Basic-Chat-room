@@ -64,3 +64,20 @@ docker run -p 1234:1234 moonal2005/simple-rpc-manal
 docker pull moonal2005/simple-rpc-manal
 
 ```
+
+```bash
+docker run -p 1234:1234 manalanwer/simple-rpc-manal:latest
+
+```
+Open a second terminal window
+
+```bash
+docker ps
+
+```
+Run the client from the local machine and connect it 
+```bash
+cd client
+go run main.go
+
+```
